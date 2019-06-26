@@ -1,9 +1,27 @@
 form {
-
+    display: inline-block;
+    width: 100%;
 }
     form input {
-
+        display: inline-block;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #D2D2D2;
+        color: #777;
+        font-size: 20px;
+        line-height: 40px;
+        background-color: transparent;
     }
+        form input.white {
+            border-color: #FFF;
+            color: #FFF;
+        }
+        form input.white::placeholder {
+            color: #FFF;
+        }
     form textarea {
         
+    }
+    :focus {
+        outline-color: transparent;
     }
