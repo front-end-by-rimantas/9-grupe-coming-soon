@@ -107,6 +107,7 @@ body * {
         margin-bottom: 20px;
         font-size: 18px;
         line-height: 25px;
+        color: var(--dark-grey-color);
     }
 
 footer > .content {
