@@ -10,7 +10,11 @@ body * {
 .container {
     display: inline-block;
     width: 100%;
-    background-color: #24C6F4;
+}
+
+.bg-secondary-color {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color-anti);
 }
 
 .hero-container {
@@ -18,7 +22,6 @@ body * {
     width: 500px;
     margin: 80px calc((100% - 500px) / 2) 40px;
     text-align: center;
-    color: #FFF;
 }
     .hero-container > img {
         margin-bottom: 50px;
@@ -71,3 +74,41 @@ body * {
         .hero-container > .mouse > .wheel {
             
         }
+
+.content {
+    display: inline-block;
+    width: 1200px;
+    margin: 0 calc((100% - 1200px) / 2);
+    padding: 80px 0;
+}
+    .content > .left {
+        display: inline-block;
+        width: 50%;
+        float: left;
+    }
+    .content > .right {
+        display: inline-block;
+        width: 40%;
+        float: left;
+        margin-left: 10%;
+    }
+    .content h2 {
+        display: inline-block;
+        width: 100%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+        /* .content h2::first-letter {
+            text-transform: uppercase;
+        } */
+    .content p {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+footer > .content {
+    padding: 20px 0;
+}
