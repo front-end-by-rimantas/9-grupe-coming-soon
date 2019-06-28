@@ -19,6 +19,10 @@ body * {
         min-height: 100vh;
     }
 
+.bg-main-color {
+    background-color: var(--main-color);
+    color: var(--main-color-anti);
+}
 .bg-secondary-color {
     background-color: var(--secondary-color);
     color: var(--secondary-color-anti);
@@ -124,6 +128,34 @@ body * {
 
 footer > .content {
     padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+    footer > .content > .social-icons {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #FFF;
+    }
+        footer > .content > .social-icons > a {
+            width: 36px;
+            color: inherit;
+            text-decoration: none;
+            margin: 5px;
+            padding: 10px;
+        }
+            footer > .content > .social-icons > a:hover {
+                background-color: #FFF;
+                color: var(--secondary-color);
+                border-radius: 50%;
+            }
+    footer > .content p {
+        color: inherit;
+    }
+
+.back-to-top {
+    position: absolute;
+    top: -28px;
+    right: -14px;
 }
 
 @media ( max-width: 1300px ) {
@@ -153,6 +185,12 @@ footer > .content {
             width: 100%;
             margin: 80px 0 0 0;
         }
+    footer > .content {
+        padding: 20px 40px;
+    }
+    .back-to-top {
+        display: none;
+    }
 }
 
 @media ( max-width: 600px ) {

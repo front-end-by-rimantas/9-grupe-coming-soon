@@ -7,7 +7,16 @@
     box-shadow: 0 2px 2px #666;
     background-color: var(--main-color);
     color: var(--main-color-anti);
+    text-decoration: none;
+    cursor: pointer;
 }
     .btn:hover {
-        
+        box-shadow: 0 2px 4px #333;
+    }
+    .btn.fa {
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        line-height: 48px;
+        border-radius: 50%;
     }
