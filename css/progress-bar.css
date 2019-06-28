@@ -32,5 +32,23 @@
             width: 80%;
             height: inherit;
             border-radius: inherit;
+        }
+        .progress-bar > .bar > .value > .loading {
+            display: inline-block;
+            width: 100%;
+            height: inherit;
+            border-radius: inherit;
             background-color: var(--secondary-color);
+
+            animation-name: loading;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+        @keyframes loading {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 100%;
+            }
         }
