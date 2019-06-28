@@ -85,10 +85,43 @@ body * {
         margin-bottom: 20px;
     }
     .hero-container > .mouse {
-        
+        display: inline-block;
+        width: 100px;
+        height: 160px;
+        border: 10px solid #FFF;
+        border-radius: 50px;
+        text-align: center;
     }
         .hero-container > .mouse > .wheel {
-            
+            display: inline-block;
+            width: 10px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #FFF;
+            margin-top: 25px;
+
+            animation-name: mouseMove;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 3s; */
+        }
+            .hero-container > .mouse > .wheel:hover {
+                animation-play-state: paused;
+            }
+
+        @keyframes mouseMove {
+            0% {
+                margin-top: 0;
+                background-color: #FFF;
+            }
+            20% {
+                margin-top: 0;
+                background-color: #FFF;
+            }
+            100% {
+                margin-top: 90px;
+                background-color: transparent;
+            }
         }
 
 .content {
